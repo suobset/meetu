@@ -1,0 +1,387 @@
+/* ************************************** */
+/*    GENERAL SETUP      */
+/* ************************************** */
+html {
+    /* Does not work with Safari and MS Edge */
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Inter";
+    margin: 0;
+    padding-bottom: 100px; /* height of the footer */
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.round-corner {
+    border-radius: 10px;
+}
+
+.pill-corner {
+    border-radius: 100px;
+}
+
+.bg-gray {
+    background-color: #e9ecef;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bg-blue {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.small-text {
+    font-size: 0.9rem;
+}
+
+.text-black {
+    color: black;
+}
+
+/* ************************************** */
+/*    PROFILE      */
+/* ************************************** */
+
+.profile {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+/* ************************************** */
+/*    NAVBAR      */
+/* ************************************** */
+
+#logo-text {
+    font-weight: 800;
+    font-size: 1.8rem;
+    background: linear-gradient(93.15deg, #0d6efd 19%, #29c5f6 79.49%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.navbar {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.navbar li {
+    margin-right: 5px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.nav-sign-in {
+    border-radius: 100px;
+    width: 5rem;
+    background-color: black;
+    transition: all 200ms;
+}
+
+.nav-sign-in:hover {
+    background: #29c5f6 0%;
+}
+
+#theme-div {
+    background-image: "docs/ui-design/Mockup/assets/sun-svgrepo-com.svg";
+}
+
+.theme-icon {
+    border-radius: 100px;
+}
+
+.theme-icon:hover {
+    transition: all 200ms;
+    background-color: #e9ecef;
+}
+
+#nav-dashboard:hover {
+    transition: all 200ms;
+    color: #29c5f6;
+}
+
+.hide {
+    display: none;
+}
+
+/* ************************************** */
+/*    CREATE NEW EVENT     */
+/* ************************************** */
+
+#add-poll-btn {
+    background-color: rgba(256, 256, 256, 0.7);
+    font-weight: 500;
+    color: black;
+    border-color: #0d6efd;
+    transition: all 200ms;
+}
+
+#add-poll-btn:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+#create-event-btn {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    /* background: linear-gradient(90deg, #0d6efd 0%, #29c5f6 100%); */
+    background: black;
+    transition: all 200ms;
+}
+
+#create-event-btn:hover {
+    color: white;
+    background-color: #0d6efd;
+}
+
+.day-btn {
+    border: none;
+}
+
+/* ************************************** */
+/*    DASHBOARD     */
+/* ************************************** */
+.meeting-item {
+    height: 12rem;
+    width: 12rem;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+.meeting-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.meeting-desc {
+    font-size: 1rem;
+}
+
+.add-meeting-btn {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #6c757d;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease;
+}
+
+.add-meeting-btn:hover {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightslategray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+/* ************************************** */
+/*    HOME and ABOUT     */
+/* ************************************** */
+.white-text {
+    color: white;
+}
+
+.light-gray-text {
+    color: #e9ecef;
+}
+
+.intro {
+    max-width: 40rem;
+    word-wrap: break-word;
+}
+
+.header-img {
+    background: #0d6efd;
+    background: -webkit-linear-gradient(
+            rgba(29, 38, 113, 0.6),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("../assets/img/umass-sunset.png");
+    background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../assets/img/umass-sunset.png"); /* The least supported option. */
+    width: 100vw;
+    height: 35rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: black;
+}
+
+a:hover {
+    text-decoration: none; /* Add underline on hover */
+}
+
+.first-btn {
+    display: block;
+    width: auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.first-btn:hover {
+    background-color: white;
+    color: #0d6efd;
+}
+
+/* ************************************** */
+/*    SELECT TIME AND POLL      */
+/* ************************************** */
+
+.poll-option {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#copy-url {
+    color: #29c5f6;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+#copy-url:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.best-bubble {
+    background-color: #29c5f6;
+    color: white;
+    width: fit-content;
+    text-align: center;
+}
+
+.table-header {
+    font-size: 0.9rem;
+}
+
+.table-header div {
+    font-size: 0.7rem;
+}
+
+.table-time {
+    font-size: 0.8rem;
+    width: fit-content;
+}
+
+thead tr th:first-child,
+tbody tr td:first-child {
+    width: 4rem;
+    min-width: 4rem;
+    max-width: 4rem;
+    word-break: break-all;
+}
+
+td {
+    border: #dee2e6 1px solid;
+    cursor: pointer;
+}
+
+tr td.highlight {
+    background: #29c5f6;
+}
+
+/* ************************************** */
+/*    FOOTER     */
+/* ************************************** */
+/* #footer {
+    /* border-top: 1px solid #e9ecef;
+  max-height: 20rem;
+  font-size: 0.9rem; */
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; /* adjust as needed */
+    border-top: 1px solid #e9ecef;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* 
+#footer li {
+    margin: 10px 0;
+} */
+
+.link:link {
+    color: black;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.link:hover {
+    color: rgb(66, 167, 201);
+}
+
+html[data-bs-theme="dark"] #footer {
+    color: white;
+}
+
+html[data-bs-theme="dark"] a {
+    color: white;
+}
+
+html[data-bs-theme="dark"] .link:link {
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+/* ************************************** */
+/*    ERROR     */
+/* ************************************** */
+.error {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
