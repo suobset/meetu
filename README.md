@@ -1,6 +1,20 @@
 # Team 6 Project: MeetU
 
+![Landing Page](home.png)
 A Better Version of When2Meet
+
+## Mockups
+
+Please see the documents below (in this repo) for project details and mockup GIFs!
+
+-   [UI Design: Wireframes, User Stories, and Page GIFs](./docs/ui-design/index.md)
+-   [Backend Design](./docs/backend/index.md)
+
+### How to run
+
+```
+npm i
+```
 
 ## Team Overview
 
@@ -49,7 +63,7 @@ We want to make a scheduling web app that overcomes these limitations, and add e
 -   See all events (past/future) on a single dashboard
 -   Delete / create event on the dashboard
 
--   (maybe) Google Map API: Mark locations on map
+-   (stretch feature) Google Map API: Mark locations on map
 
 ## License
 
